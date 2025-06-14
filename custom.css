@@ -1,0 +1,5 @@
+/* カスタムネオングロー */
+.neon-glow {
+    box-shadow: 0 0 8px #39ff14, 0 0 16px #39ff14, 0 0 32px #39ff14;
+    text-shadow: 0 0 8px #39ff14, 0 0 16px #39ff14;
+}
