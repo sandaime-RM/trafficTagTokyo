@@ -20,16 +20,73 @@
             </ul>
         </nav>
     </header>
-    <main class="max-w-2xl mx-auto bg-white rounded-xl shadow-lg mt-8 p-8">
-        <h2 class="text-2xl font-bold text-green-600 border-l-4 border-green-600 pl-3 mb-4">当日の流れ</h2>
-        <ol class="list-decimal ml-6 space-y-2 text-lg">
-            <li>集合・受付（指定駅に集合、受付・チーム分け）</li>
-            <li>ルール説明・注意事項の案内</li>
-            <li>ゲームスタート（都区内パスを使って移動開始）</li>
-            <li>途中ミッションやチェックポイント</li>
-            <li>ゲーム終了・集合（指定時間にゴール駅集合）</li>
-            <li>結果発表・表彰・解散</li>
-        </ol>
+    <main class="max-w-3xl mx-auto bg-white rounded-xl shadow-lg mt-8 p-8">
+        <h2 class="text-2xl font-bold text-green-600 border-l-4 border-green-600 pl-3 mb-6">当日の流れ</h2>
+        
+        <!-- タイムテーブル -->
+        <div class="mb-8">
+            <h3 class="text-lg font-semibold text-gray-800 mb-1 text-center">タイムテーブル</h3>
+            <p class="text-sm text-gray-600 mb-4">各回（9/20, 9/28, 10/4）とも同じ流れで進行します。</p>
+            <div class="overflow-x-auto">
+                <table class="w-full border-collapse border border-gray-300">
+                    <thead>
+                        <tr class="bg-gray-100">
+                            <th class="border border-gray-300 px-4 py-3 text-left font-semibold">時刻</th>
+                            <th class="border border-gray-300 px-4 py-3 text-left font-semibold">内容</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-gray-50">
+                            <td class="border border-gray-300 px-4 py-3 font-medium">09:00~09:30</td>
+                            <td class="border border-gray-300 px-4 py-3">理科大　神楽坂キャンパスにて受付</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="border border-gray-300 px-4 py-3 font-medium">09:30~10:00</td>
+                            <td class="border border-gray-300 px-4 py-3">注意事項など説明</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="border border-gray-300 px-4 py-3 font-medium">10:00</td>
+                            <td class="border border-gray-300 px-4 py-3">逃走チーム　移動開始</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="border border-gray-300 px-4 py-3 font-medium">10:15</td>
+                            <td class="border border-gray-300 px-4 py-3">鬼チーム　移動開始</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="border border-gray-300 px-4 py-3 font-medium">10:15~12:00</td>
+                            <td class="border border-gray-300 px-4 py-3">エリアごとに分かれてゲーム</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="border border-gray-300 px-4 py-3 font-medium">12:00~16:00</td>
+                            <td class="border border-gray-300 px-4 py-3">全エリアでゲーム</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="border border-gray-300 px-4 py-3 font-medium">16:30</td>
+                            <td class="border border-gray-300 px-4 py-3">理科大　神楽坂キャンパスに再度集合</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="border border-gray-300 px-4 py-3 font-medium">16:30~17:00</td>
+                            <td class="border border-gray-300 px-4 py-3">結果発表、表彰式、写真撮影</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="border border-gray-300 px-4 py-3 font-medium">17:00</td>
+                            <td class="border border-gray-300 px-4 py-3">解散</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 注意事項 -->
+        <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6">
+            <h3 class="text-lg font-semibold text-yellow-800 mb-2">重要なお知らせ</h3>
+            <ul class="text-yellow-700 space-y-1">
+                <li>• 9:30までに集合してください</li>
+                <li>• 都区内パスは事前に各自でご購入ください</li>
+                <li>• スマートフォンの充電を満タンにしてお越しください</li>
+            </ul>
+        </div>
+
         <p class="mt-6 text-sm text-gray-600">※詳細は当日ご案内します。変更となる場合があります。</p>
     </main>
     <footer class="text-center text-gray-500 text-sm mt-10 mb-4">
