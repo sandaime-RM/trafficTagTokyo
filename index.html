@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body class="bg-gray-50 text-gray-900 min-h-screen" style="font-family: 'Noto Sans JP', sans-serif;">
     <header class="bg-white border-b-2 border-gray-200 py-8 text-center shadow-sm">
@@ -21,13 +22,8 @@
         </nav>
     </header>
     <main class="max-w-3xl mx-auto bg-white rounded-xl shadow-lg mt-8 p-8">
-        <div class="mb-6">
-            <img src="images/poster_front.jpg" alt="イベントポスター" class="mx-auto max-h-96 rounded-xl border border-gray-200 mb-2">
-            <p class="text-center text-sm text-gray-400">イベントポスター</p>
-        </div>
-
         <!-- プロモーションビデオ -->
-        <section class="video-section mt-8">
+        <section class="video-section">
             <h2 class="text-2xl font-bold text-green-600 border-l-4 border-green-600 pl-3 mb-4">プロモーションビデオ</h2>
             <div class="bg-gray-50 rounded-xl p-4">
                 <video 
@@ -50,9 +46,19 @@
             <p class="text-base md:text-lg leading-relaxed">
                 都区内パスを使って、電車で鬼ごっこ！<br>
                 東京の街を舞台に、仲間と協力しながら鬼ごっこを楽しもう。<br>
-                駅や電車を活用した新感覚の体験型イベントです。<br>
-                詳細は後日発表予定。グループも、お一人様も大歓迎！
+                ミッションを通して街の魅力を再発見！<br>
+                グループでも、お一人様でも大歓迎！
             </p>
+            <!-- ポスターをダウンロード -->
+            <div class="mt-4">
+                <a 
+                    href="files/poster.pdf" 
+                    download="電車で鬼ごっこ_ポスター.pdf" 
+                    class="inline-block bg-yellow-300 hover:bg-yellow-400 text-gray-900 font-bold py-2 px-4 rounded transition-colors duration-200"
+                >
+                    <i class="bi bi-download me-2"></i>ポスターをダウンロード
+                </a>
+            </div>
         </section>
 
         <section class="event-details mt-8">
@@ -102,6 +108,30 @@
                     参加登録フォーム
                 </a>
             </button>
+            <!-- 参加までの流れ -->
+            <div class="mt-8">
+                <div class="flex flex-wrap justify-center items-end gap-2 md:gap-6">
+                    <div class="flex flex-col items-center">
+                        <i class="bi bi-clipboard-check text-4xl text-blue-600"></i>
+                        <span class="mt-2 text-sm md:text-base">フォームから<br>参加登録</span>
+                    </div>
+                    <i class="bi bi-chevron-right text-2xl text-blue-600 mx-1"></i>
+                    <div class="flex flex-col items-center">
+                        <i class="bi bi-discord text-4xl text-blue-600"></i>
+                        <span class="mt-2 text-sm md:text-base">Discordサーバー<br>に参加</span>
+                    </div>
+                    <i class="bi bi-chevron-right text-2xl text-blue-600 mx-1"></i>
+                    <div class="flex flex-col items-center">
+                        <i class="bi bi-credit-card text-4xl text-blue-600"></i>
+                        <span class="mt-2 text-sm md:text-base">参加料金を<br>お支払い</span>
+                    </div>
+                    <i class="bi bi-chevron-right text-2xl text-blue-600 mx-1"></i>
+                    <div class="flex flex-col items-center">
+                        <i class="bi bi-phone text-4xl text-blue-600"></i>
+                        <span class="mt-2 text-sm md:text-base">鬼ごっこアプリ<br>に登録</span>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="contact mt-8">
             <h2 class="text-2xl font-bold text-green-600 border-l-4 border-green-600 pl-3 mb-2">主催・お問い合わせ</h2>
