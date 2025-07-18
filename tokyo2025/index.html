@@ -81,23 +81,56 @@
 
         <section class="event-info mt-8">
             <h2 class="text-2xl font-bold text-green-600 border-l-4 border-green-600 pl-3 mb-2">開催日</h2>
+            <p class="ms-6">開催日 <span class="text-sm text-gray-600">/ 予備日</span></p>
             <ul class="ml-6 list-disc text-lg">
-                <li>2025年9月20日（土）</li>
-                <li>2025年9月28日（日）</li>
-                <li>2025年10月4日（土）</li>
+                <li>2025年9月20日（土） <span class="text-sm text-gray-600">/ 2025年9月27日（土）</span></li>
+                <li>2025年9月28日（日） <span class="text-sm text-gray-600">/ 2025年10月5日（日）</span></li>
+                <li>2025年10月4日（土） <span class="text-sm text-gray-600">/ 2025年10月11日（土）</span></li>
             </ul>
         </section>
 
         <section class="fee-info mt-8">
             <h2 class="text-2xl font-bold text-green-600 border-l-4 border-green-600 pl-3 mb-2">参加料金</h2>
-            <ul class="ml-6 list-disc text-lg">
-                <li>1人チーム　<span class="font-bold">1,500円</span></li>
-                <li>2人チーム　<span class="font-bold">2,800円</span></li>
-                <li>3人チーム　<span class="font-bold">3,900円</span></li>
-                <li>4人チーム　<span class="font-bold">4,400円</span></li>
-                <li>5人チーム　<span class="font-bold">5,000円</span></li>
-            </ul>
-            <p class="mt-2 text-orange-600 font-semibold">※上記のほか、各自で「都区内パス」（大人760円/1日）をご購入いただく必要があります。</p>
+            <div class="overflow-x-auto">
+                <table class="min-w-full border border-gray-300 rounded-lg text-lg">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="py-2 px-4 border-b">チーム人数</th>
+                            <th class="py-2 px-4 border-b">合計料金</th>
+                            <th class="py-2 px-4 border-b">1人あたり</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-2 px-4 border-b text-center">1人</td>
+                            <td class="py-2 px-4 border-b text-center font-bold">1,500円</td>
+                            <td class="py-2 px-4 border-b text-center">1,500円</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border-b text-center">2人</td>
+                            <td class="py-2 px-4 border-b text-center font-bold">2,800円</td>
+                            <td class="py-2 px-4 border-b text-center">1,400円</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border-b text-center">3人</td>
+                            <td class="py-2 px-4 border-b text-center font-bold">3,900円</td>
+                            <td class="py-2 px-4 border-b text-center">1,300円</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border-b text-center">4人</td>
+                            <td class="py-2 px-4 border-b text-center font-bold">4,400円</td>
+                            <td class="py-2 px-4 border-b text-center">1,100円</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border-b text-center">5人</td>
+                            <td class="py-2 px-4 border-b text-center font-bold">5,000円</td>
+                            <td class="py-2 px-4 border-b text-center">1,000円</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="mt-4 text-sm text-gray-600">※参加登録後にクレジットカードを用いたオンライン決済でお支払いください。</p>
+            <p class="mt-1 text-orange-600 font-semibold">※上記のほか、各自で「都区内パス」（大人760円/1日）をご購入いただく必要があります。</p>
         </section>
 
         <section class="entry mt-8">
@@ -132,6 +165,17 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- 開催に関する細かい情報（最大人数・最少催行人員） -->
+        <section class="details mt-8">
+            <h2 class="text-2xl font-bold text-green-600 border-l-4 border-green-600 pl-3 mb-2">開催詳細</h2>
+            <ul class="ml-6 list-disc text-lg">
+                <li>最大参加チーム数：各回50チーム<br/>
+                <span class="text-sm text-gray-600">人数が150名に達した際は、50チーム未満でも締め切り致します。</span></li>
+                <li>最少催行人員：各回20名</li>
+                <li>雨天決行（荒天の場合は予備日に延期）</li>
+            </ul>
         </section>
         <section class="contact mt-8">
             <h2 class="text-2xl font-bold text-green-600 border-l-4 border-green-600 pl-3 mb-2">主催・お問い合わせ</h2>
