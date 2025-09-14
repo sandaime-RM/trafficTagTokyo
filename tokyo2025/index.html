@@ -22,27 +22,61 @@
         </nav>
     </header>
     <main class="max-w-4xl mx-auto bg-white rounded-xl mt-8">
-        <!-- プロモーションビデオ -->
-        <section class="video-section">
-            <h2>プロモーションビデオ</h2>
-            <div class="p-6">
-            <div class="bg-gray-50 rounded-xl p-4">
-                <video 
-                    class="w-full max-w-2xl mx-auto rounded-lg shadow-md" 
-                    controls 
-                    preload="metadata"
-                >
-                    <source src="images/prVideo.mp4" type="video/mp4">
-                    <p class="text-center text-gray-600 mt-4">
-                        お使いのブラウザは動画の再生に対応していません。
-                        <a href="images/prVideo.mp4" class="text-blue-600 hover:text-blue-800 underline">動画を直接ダウンロード</a>してご覧ください。
-                    </p>
-                </video>
-                <p class="text-center text-sm text-gray-500 mt-2">電車で鬼ごっこの魅力をご紹介</p>
-            </div>
-            </div>
-        </section>
 
+        <div id="default-carousel" class="relative w-full" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="./images/2_allPlayers.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="./images/2_opening.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="./images/1_allPlayers.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="./images/1_game.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="./images/map_img.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+        <p class="text-center text-sm text-gray-500 mt-2">過去のイベントの様子</p>
+
+        <h3 class="text-center text-xl font-bold text-orange-800 mt-6 bg-yellow-100 p-2">9/28（日）開催の回は、<br/>9/21（日）に応募締め切り！</h3>
+        
         <section class="event-summary mt-8">
             <h2>イベント概要</h2>
             <div class="p-6">
@@ -53,7 +87,7 @@
                     グループでも、お一人様でも大歓迎！
                 </p>
                 <!-- ポスターをダウンロード -->
-                <div class="mt-4">
+                <div class="my-4">
                     <a 
                         href="files/poster.pdf" 
                         download="電車で鬼ごっこ_ポスター.pdf" 
@@ -61,6 +95,11 @@
                     >
                         <i class="bi bi-download me-2"></i>ポスターをダウンロード
                     </a>
+                </div>
+
+                <!-- YouTube動画埋め込み -->
+                <div class="my-6 flex justify-center">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BhH_jQr92xI?si=jrNyo25VNdp1V2de" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
 
                 <!-- JR東と理科大が協力 -->
@@ -228,5 +267,84 @@
         <p>&copy; 2025 東京理科大学大規模鬼ごっこ実行委員会</p>
         <p>協力 : 東京理科大学 地域連携室</p>
     </footer>
+
+    <!-- Carousel Script -->
+    <script>
+    (function(){
+        const carousel = document.getElementById('default-carousel');
+        if(!carousel) return;
+        const items = Array.from(carousel.querySelectorAll('[data-carousel-item]'));
+        const prevBtn = carousel.querySelector('[data-carousel-prev]');
+        const nextBtn = carousel.querySelector('[data-carousel-next]');
+        const indicators = Array.from(carousel.querySelectorAll('[data-carousel-slide-to]'));
+        let current = 0;
+        let timer = null;
+        const INTERVAL = 5000;
+
+        function show(index){
+            if(index < 0) index = items.length -1;
+            if(index >= items.length) index = 0;
+            items.forEach((el,i)=>{
+                if(i === index){
+                    el.classList.remove('hidden');
+                    el.classList.add('block');
+                    el.setAttribute('aria-hidden','false');
+                } else {
+                    el.classList.add('hidden');
+                    el.classList.remove('block');
+                    el.setAttribute('aria-hidden','true');
+                }
+            });
+            indicators.forEach((btn,i)=>{
+                if(i === index){
+                    btn.classList.add('bg-white','ring','ring-blue-500');
+                    btn.setAttribute('aria-current','true');
+                } else {
+                    btn.classList.remove('bg-white','ring','ring-blue-500');
+                    btn.setAttribute('aria-current','false');
+                }
+            });
+            current = index;
+        }
+
+        function next(){ show(current + 1); }
+        function prev(){ show(current - 1); }
+
+        function start(){
+            if(timer) return;
+            timer = setInterval(next, INTERVAL);
+        }
+        function stop(){
+            if(timer){ clearInterval(timer); timer = null; }
+        }
+
+        // Indicator click
+        indicators.forEach((btn,i)=>{
+            btn.addEventListener('click', ()=>{ show(i); });
+            btn.addEventListener('keydown', (e)=>{ if(e.key === 'Enter' || e.key === ' ') { e.preventDefault(); show(i);} });
+            btn.setAttribute('tabindex','0');
+            btn.setAttribute('role','button');
+        });
+
+        // Prev/Next
+        prevBtn && prevBtn.addEventListener('click', prev);
+        nextBtn && nextBtn.addEventListener('click', next);
+
+        // Keyboard navigation
+        carousel.addEventListener('keydown', (e)=>{
+            if(e.key === 'ArrowLeft'){ prev(); }
+            if(e.key === 'ArrowRight'){ next(); }
+        });
+        carousel.setAttribute('tabindex','0');
+
+        // Pause on hover
+        carousel.addEventListener('mouseenter', stop);
+        carousel.addEventListener('mouseleave', start);
+
+        // Initialize
+        show(0);
+        start();
+    })();
+    </script>
 </body>
 </html>
